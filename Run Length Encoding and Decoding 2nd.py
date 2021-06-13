@@ -24,7 +24,9 @@ class Codec:
         org_data=""
         num=""
         for i in data:
-            if(i.isalpha()):
+            if(i==" "):
+                org_data+=i
+            elif(i.isalpha()):
                 if(num!=''):
                     if(num.isdigit()):
                         org_data+=i*int(num)
